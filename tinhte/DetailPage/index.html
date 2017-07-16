@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Trang chi tiết</title>
 
     <!-- Bootstrap -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+     <link href="../../css/detail.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,11 +20,472 @@
     <![endif]-->
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <header>
+      <nav class="navbar-default" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="../../images/logo_small.png" alt=""></a>
+        </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Collect the nav links, forms, and other content for toggling -->
+         <ul class="nav navbar-nav">
+           <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Diễn Đàn <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>     
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gallery <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+             <li><a href="#">Timeline</a></li>
+             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rao vặt <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+             <li><a href="#">HTC U11</a></li>
+          </ul>
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Đăng nhập</a></li>
+            </ul>    
+            <div class="input-group">
+            <input type="text" placeholder="Tìm kiếm" name="srch-term" id="srch-term">
+            <i class="glyphicon glyphicon-search" id="search_icon"></i>
+            </div>
+          </div>
+    </nav>
+ </header><!-- /header -->
+
+    <div class="container panel panel-default">
+      <div id="post">
+        <div id="cover_image">
+          <h3>[Video] Chi tiết về Vespa GTS mới: thiết kế vẫn thế nhưng công nghệ đã mới </h3>               
+            <ul class="linked">
+              <li><a href="#">Xe máy</a>.</li>   
+              <li><a href="#">Thứ 6 lúc 18h30</a>.</li>
+              <li>Trả lời: 86, Lượt xem: 5,000.</li>           
+            </ul>       
+        </div>
+         <div class="bot_image"> 
+            <ul class="profile">
+              <li><a href="#"><img src="../../images/hinh2.png" alt=""></a></li>
+              <li><a href="#"><h4>levuongthinh</h4></a></li>
+            </ul>
+            <ul class="social">
+              <li class="face_share">
+              <a href="#">
+                <span>
+                   <span class="fa-stack fa-sm icon-facebook">
+                    <i class="fa fa-square fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x"></i>
+                  </span>
+                 <span id="border_f">Facebook</span>
+                  <span>11</span>
+                </span>
+                </a>
+                 <a href="#">
+                  <span>
+                     <span class="fa-stack fa-sm icon-plus">
+                      <i class="fa fa-square fa-stack-2x"></i>
+                      <i class="fa fa-plus fa-stack-1x"></i>
+                    </span>
+                   <span>Share</span>
+                  </span>
+                  </a>
+              </li>              
+            </ul>
+          </div>
+          <ul class="pagination">
+              <li><a href="#">&laquo;</a></li>
+              <li class="active"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">&raquo;</a></li>
+          </ul>
+          <p class="p_text">
+            Piaggio GTS thế hệ mới không thay đổi nhiều về thiết kế tổng thể nhưng nó được cập nhật những công nghệ mới như động cơ iGet 4 van cho bản 125/150, tính năng Start&Stop, phanh đĩa ABS 2 kênh, đèn DRL LED,… Với bản GTS Super 300 thì động cơ vẫn cũ, không có Start&Stop nhưng có thêm hệ thống kiểm soát trượt ASR.
+          </p>
+         <div id="video_yu">
+           <iframe width="100%" height="450px" src="https://www.youtube.com/embed/tu5nYczfu08" frameborder="0" allowfullscreen></iframe>
+         </div>
+         <p class="p_text">
+          Tại Việt Nam, Piaggio sẽ chỉ bán ra bản GTS Super 125 và GTS Super 300. Bản GTS Super 150 sẽ có ở một số thị trường khác. Tuần sau thì xe sẽ được chính thức ra mắt và có lẽ sẽ bán ra luôn vì khi đi thăm nhà máy Piaggio Việt Nam mình đã thấy có nhiều xe xuất xưởng chờ giao đại lý rồi. Giá cho bản GTS Super 125 sẽ tương đương với đời trước, còn bản GTS Super 300 sẽ là một bất ngờ lớn, chỉ bằng 1/2 so với SH 300i nhập Ý. Con số chính xác thì hẹn các bạn tuần sau nhé.           
+         </p>
+         <img src="../../images/hinh3.png" alt=""/ class="img_detail" title="Phóng to">
+         <p class="p_text">
+           <a href="#">Vespa GTS</a> có lẽ phù hợp hơn với nam giới vì kích thước lớn và trọng lượng nặng. Chiếc Vespa GTS Super 125 và 150 có trọng lượng khoảng 140 kg; trong khi bản GTS Super 300 nặng 160 kg. Ngoài ra thì chiều cao yên của GTS cũng ở mức khá cao, bản thân mình có chiều cao khoảng 1,68 m vẫn chống chân với.
+         </p>
+         <h5>Chủ đề tương tự</h5>
+         <ul class="topic">           
+           <li><a>ddg</a></li>
+           <li><a>fgf</a></li>
+         </ul>
+         <ul class="social" id="bot_share">
+              <li class="face_share">
+                <a href="#">
+                  <span>
+                     <span class="fa-stack fa-sm icon-facebook">
+                      <i class="fa fa-square fa-stack-2x"></i>
+                      <i class="fa fa-facebook fa-stack-1x"></i>
+                    </span>
+                   <span id="border_f">Facebook</span>
+                    <span>11</span>
+                  </span>
+                  </a>
+                 <a href="#">
+                  <span>
+                     <span class="fa-stack fa-sm icon-plus">
+                      <i class="fa fa-square fa-stack-2x"></i>
+                      <i class="fa fa-plus fa-stack-1x"></i>
+                    </span>
+                   <span>Share</span>
+                  </span>
+                  </a>
+              </li>              
+          </ul>
+          <!-- comment 1 -->
+          <div class="comment">
+            <div class="img_profile">
+              <ul>
+                <li><a><img src="../../images/hinh9.png" alt="" class="img_pr"></a></li>
+                <ul class="cover_color">
+                  <li><a href="#">abc</a></li>
+                  <li>Thành viên</li>
+                </ul>
+                <li>Tham gia</li>
+                <li>Được thích</li>
+                
+              </ul>              
+            </div>
+            <div class="comment_per"> 
+              <p>Thiết kế vẫn thế, nhìn hoài vẫn không chán. Cái gác chân có lẽ piago da nghe lời người dùng. Chứ người ngồi sau đụng vô người trước khó chịu</p>
+              <ul class="pos_ul">
+                <li><a href="#">ddff</a></li>
+                <li><a href="#">#</a></li>
+              </ul>
+              <div class="clear"></div>
+              <ul class="pos_like">
+                <li><a href="#">mai mai</a>,</li>
+                <li><a href="#">mai trang</a>,</li>
+                <li><a href="#">ha minh</a>&nbsp;và</li>
+                <li><a href="#">8 người khác</a>&nbsp;thích nội dung này.</li>
+                
+                
+              </ul>
+              
+            </div>
+            
+          </div>
+          <hr> <!-- /comment 1 -->            
+        
+      </div>
+
+      <div id="sidebar">
+     <!--  dang ky thanh vien -->
+     <div class="panel_id">
+     <button type="button" class="btn btn-warning" id="sign_in">Đăng ký thành viên</button>    
+     </div>
+
+     <!--  co the ban quan tam -->
+       <div class="panel panel-default">
+        <div class="panel-heading">Có thể bạn quan tâm</div>
+          <div class="panel-body" id="sidebar_body"> 
+            <ul>      
+
+                <li><a href=""><img src="../../images/hinh9.png" alt="" class="img_pr_a"></a></li>
+                <li class="word_a"><a href="#">Có thể bạn quan tâm Có thể bạn quan tâm Có thể bạn quan tâm</a></li> 
+               
+                
+             </ul>    
+             <ul>      
+
+                <li><a href=""><img src="../../images/hinh9.png" alt="" class="img_pr_a"></a></li>
+                <li class="word_a"><a href="#">Có thể bạn quan tâm Có thể bạn quan tâm Có thể bạn quan tâm</a></li> 
+               
+                
+             </ul>     
+             <ul>      
+
+                <li><a href=""><img src="../../images/hinh9.png" alt="" class="img_pr_a"></a></li>
+                <li class="word_a"><a href="#">Có thể bạn quan tâm Có thể bạn quan tâm Có thể bạn quan tâm</a></li> 
+               
+                
+             </ul>     
+             <ul>      
+
+                <li><a href=""><img src="../../images/hinh9.png" alt="" class="img_pr_a"></a></li>
+                <li class="word_a"><a href="#">Có thể bạn quan tâm Có thể bạn quan tâm Có thể bạn quan tâm</a></li> 
+               
+                
+             </ul>       
+        </div>
+      </div> <!--  co the ban quan tam -->
+
+       <!--  cung chuyen muc -->
+       <div class="panel panel-default">
+        <div class="panel-heading">Cùng chuyên mục</div>
+          <div class="panel-body" id="sidebar_body"> 
+            <ul>      
+
+                <li><a href=""><img src="../../images/hinh9.png" alt="" class="img_pr_a"></a></li>
+                <li class="word_a"><a href="#">Có thể bạn quan tâm Có thể bạn quan tâm Có thể bạn quan tâm</a></li> 
+               
+                
+             </ul>    
+             <ul>      
+
+                <li><a href=""><img src="../../images/hinh9.png" alt="" class="img_pr_a"></a></li>
+                <li class="word_a"><a href="#">Có thể bạn quan tâm Có thể bạn quan tâm Có thể bạn quan tâm</a></li> 
+               
+                
+             </ul>     
+             <ul>      
+
+                <li><a href=""><img src="../../images/hinh9.png" alt="" class="img_pr_a"></a></li>
+                <li class="word_a"><a href="#">Có thể bạn quan tâm Có thể bạn quan tâm Có thể bạn quan tâm</a></li> 
+               
+                
+             </ul>     
+             <ul>      
+
+                <li><a href=""><img src="../../images/hinh9.png" alt="" class="img_pr_a"></a></li>
+                <li class="word_a"><a href="#">Có thể bạn quan tâm Có thể bạn quan tâm Có thể bạn quan tâm</a></li> 
+               
+                
+             </ul>       
+        </div>
+      </div> <!--  cung chuyen muc -->
+
+      <!--  Sôi động trong tuần -->
+       <div class="panel panel-default">
+        <div class="panel-heading">Sôi động trong tuần</div>
+          <div class="panel-body" id="sidebar_body"> 
+            <ul>      
+
+                <li><a href=""><img src="../../images/hinh9.png" alt="" class="img_pr_a"></a></li>
+                <li class="word_a"><a href="#">Có thể bạn quan tâm Có thể bạn quan tâm Có thể bạn quan tâm</a></li> 
+               
+                
+             </ul>    
+             <ul>      
+
+                <li><a href=""><img src="../../images/hinh9.png" alt="" class="img_pr_a"></a></li>
+                <li class="word_a"><a href="#">Có thể bạn quan tâm Có thể bạn quan tâm Có thể bạn quan tâm</a></li> 
+               
+                
+             </ul>     
+             <ul>      
+
+                <li><a href=""><img src="../../images/hinh9.png" alt="" class="img_pr_a"></a></li>
+                <li class="word_a"><a href="#">Có thể bạn quan tâm Có thể bạn quan tâm Có thể bạn quan tâm</a></li> 
+               
+                
+             </ul>     
+             <ul>      
+
+                <li><a href=""><img src="../../images/hinh9.png" alt="" class="img_pr_a"></a></li>
+                <li class="word_a"><a href="#">Có thể bạn quan tâm Có thể bạn quan tâm Có thể bạn quan tâm</a></li> 
+               
+                
+             </ul>       
+        </div>
+      </div> <!--  Sôi động trong tuần -->
+
+
+        
+      </div>
+      
+    </div>
+    <hr>
+    <footer>
+      <div id="footer">
+        <div id="first_footer">
+          <ul class="list-inline" id="list_first">
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Giúp đỡ</a></li>
+            <li><a href="#">Điều khoản và quy định</a></li>
+          </ul>
+          <div class="clear"></div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Tinhte.vn</th>
+                <th>Diễn đàn</th>
+                <th>Nhật tảo</th>
+                <th>Liên kết</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="#">Trang nhất</a></td>
+                <td><a href="#">Thông tin</a></td>
+                <td><a href="#">Mua bán điện thoại</a></td>
+                <td><a href="#">Cafe Tinhte.vn</a></td>                
+              </tr>
+              <tr>               
+                <td> <a href="#">Diễn đàn </a></td>
+                <td> <a href="#">Máy tính </a></td>
+                <td> <a href="#">Mua bán máy tính</a></td>
+                <td> <a href="#">Khacten.com</a></td>                
+              </tr>
+              <tr>
+             
+                <td><a href="#">Hỗ trợ-hướng dẫn </a></td>
+                <td><a href="#">Điện thoại </a></td>
+                <td><a href="#">Mua bán máy tính bảng </a></td>
+                <td><a href="#">1TuDien.vn </a></td>
+                
+              </tr>
+              <tr>
+               
+                <td><a href="#">Thư viện </a></td>
+                <td><a href="#">Camera</a></td>
+                <td><a href="#">Mua bán camera </a></td>
+                <td><a href="#">NhacCuaTui.com</a></td>
+                
+              </tr>
+
+              <tr>
+               
+                <td><a href="#">Gallery </a></td>
+                <td><a href="#">Xe </a></td>
+                <td><a href="#">Mua bán đồ công nghệ </a></td>
+                <td> <a href="#">5Giay.vn </a></td>
+                
+              </tr>
+
+                <tr>
+               
+                <td><a href="#">Sự kiện </a></td>
+                <td><a href="#">Khoa học công nghệ </a></td>
+                <td><a href="#">Mua bán xe</a></td>
+                <td><a href="#">Webtretho.com</a></td>
+
+              </tr>
+
+               <tr>
+               
+                <td><a href="#">Tinhtevn.RSS </a></td>
+                <td><a href="#">Tinh tế</a></td>
+                <td><a href="#">Mua bán điện máy</a></td>
+                <td><a href="#">Biker Vietnam</a></td>
+
+              </tr>
+              <tr>
+
+                <td><a href="#">Liên hệ quảng cáo </a></td>
+                <td></td>
+                <td><a href="#">Mua bán sim, sim3g </a></td>
+                <td></td>
+
+              </tr>
+            </tbody>
+         </table>
+          
+        </div>
+        <div id="final_footer">
+          <p> Chịu trách nhiệm nội dung: Trần Mạnh Hiệp • © 2015 Công ty Cổ phần MXH Tinh tế <br/>        
+          Địa chỉ: 209 Đường Nam Kỳ Khởi Nghĩa, Phường 7, Quận 3, TP.HCM • Giấy phép MXH số 385/GP-TTTT do Bộ TTTT cấp.
+          </p>
+        <div class="footer_share">
+          <ul class="list-inline">
+            <li><a href="#">
+                <span class="fa-stack fa-lg icon-facebook">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x"></i>
+                </span>
+                </a></li>
+            <li><a href="#">
+                <span class="fa-stack fa-lg icon-twitter">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x"></i>
+                </span>
+            </a></li>
+            <li><a href="#">
+                <span class="fa-stack fa-lg icon-yutube">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-youtube-play fa-stack-1x"></i>
+                </span>
+                </a></li>
+            <li><a href="#">
+                <span class="fa-stack fa-lg icon-gplus">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-google-plus fa-stack-1x"></i>
+                </span>
+                </a></li>
+           </ul>
+          
+        </div>
+          
+        </div>
+      </div>
+
+      
+    </footer><!-- /footer -->
+
+ <a id="back-to-top" href="#" class="back-to-top" role="button"><span class="fa fa-arrow-up"></span></a>
+
+
+
+  
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../js/bootstrap.min.js"></script>
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script language="javascript">
+         $(document).ready(function(){
+              $(window).scroll(function () {
+                     if ($(this).scrollTop() > 50) {
+                         $('#back-to-top').fadeIn();
+                     } else {
+                         $('#back-to-top').fadeOut();
+                     }
+                 });
+                 // scroll body to 0px on click
+                 $('#back-to-top').click(function () {
+                     $('#back-to-top').tooltip('hide');
+                     $('body,html').animate({
+                         scrollTop: 0
+                     }, 800);
+                     return false;
+                 });
+                 
+                 $('#back-to-top').tooltip('show');             
+         
+         });
+         
+      </script>
+    <script src="../../js/bootstrap.min.js"></script>
   </body>
 </html>
